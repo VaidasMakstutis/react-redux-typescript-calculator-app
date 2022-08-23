@@ -33,18 +33,15 @@ const Calculator = () => {
 
   return (
     <div className="App" style={{ display: "flex", justifyContent: "center" }}>
-      <div
-        className="calc mx-5 my-5"
-        style={{ padding: "20px", border: "1px solid blue", borderRadius: "5px", backgroundColor: "rgb(241, 241, 241)" }}
-      >
-        <h2 className="mb-4 text-center">Calculator</h2>
+      <div style={{ marginTop: "40px", padding: "20px", border: "1px solid blue", borderRadius: "5px", backgroundColor: "rgb(241, 241, 241)" }}>
+        <h2 style={{ marginBottom: "20px", textAlign: "center" }}>Calculator</h2>
         <div className="input-group mb-2">
           <input type="text" value={d1} onChange={handleChangeD1} />
         </div>
         <div className="input-group mb-2">
           <input type="text" value={d2} onChange={handleChangeD2} />
         </div>
-        <div className="calc_buttons" style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           <button className="btn btn-primary" onClick={sum}>
             +
           </button>
@@ -58,7 +55,7 @@ const Calculator = () => {
             /
           </button>
         </div>
-        <div className="calc_result mt-3" style={{ border: "1px solid black", padding: "5px", backgroundColor: "rgb(255, 255, 255)" }}>
+        <div style={{ marginTop: "10px", padding: "5px", border: "1px solid black", backgroundColor: "rgb(255, 255, 255)" }}>
           Result: {calculator}
         </div>
       </div>
