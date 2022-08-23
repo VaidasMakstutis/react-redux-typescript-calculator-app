@@ -25,7 +25,7 @@ const calculatorReducer = (state: number, action: any) => {
       if (action.payload.d2 === 0) {
         calculator = "Error";
       } else {
-        calculator = action.payload.d1 / action.payload.d2;
+        calculator = (action.payload.d1 / action.payload.d2).toFixed(2);
       }
       break;
 
